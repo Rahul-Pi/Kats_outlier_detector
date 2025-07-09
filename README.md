@@ -31,16 +31,11 @@ Kats is released by Facebook's *Infrastructure Data Science* team. It is availab
 
 ## Installation in Python
 
-Kats is on PyPI, so you can use `pip` to install it.
+You need python 3.10
 
 ```bash
 pip install --upgrade pip
-pip install kats
-```
-
-If you need only a small subset of Kats, you can install a minimal version of Kats with
-```bash
-MINIMAL_KATS=1 pip install kats
+MINIMAL_KATS=1 pip install -e .
 ```
 which omits many dependencies (everything in `test_requirements.txt`).
 However, this will disable many functionalities and cause `import kats` to log
